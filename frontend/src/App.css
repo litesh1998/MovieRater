@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
+}
+
+.App-header {
+  
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: #282c34;
+  
+}
+
+.layout{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+}
+
+.login-container{
+  width: 50%;
+  margin: 0% 25%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 0.8rem;
+}
+
+button{
+  color: rgb(20, 82, 214);
+  background-color: rgb(203, 253, 24);
+  padding:  5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 00.8rem;
+  outline: rgb(150, 29, 150);
+  cursor: pointer;
+}
+button:disabled{
+  color: #ffffff;
+  background-color: cadetblue;
+  cursor: pointer;
+}
+
+.orange{
+  color: orange;
+}
+
+.rate-container{
+  border-top: 2px solid yellowgreen;
+  margin-top: 20px;
+}
+
+.yellowgreen{
+  color: yellowgreen;
+}
+
+.rate-container .fa-star{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.movieTitle{
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+}
+
+.movieTitle svg{
+  font-size: 1.2rem;
+  margin: 30px 5px;
+}
+
+.fa-sign-out-alt{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  
+}
