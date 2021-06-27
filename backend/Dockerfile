@@ -1,11 +1,9 @@
-FROM python:3.8
+FROM python:3.8-slim-buster
 
-WORKDIR /web-app-movizrating
+WORKDIR /backend
 
 COPY ./api ./api
 COPY ./movizrating ./movizrating
 COPY ./manage.py .
 COPY ./requirements.txt .
-COPY db.sqlite3 .
 RUN pip install -r requirements.txt
-RUN python manage.py migrate
